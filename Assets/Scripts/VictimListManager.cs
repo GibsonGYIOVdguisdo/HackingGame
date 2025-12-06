@@ -10,6 +10,12 @@ public class VictimListManager : MonoBehaviour
     void Start()
     {
         AddNewVictim();
+        AddNewVictim();
+        AddNewVictim();
+        AddNewVictim();
+        AddNewVictim();
+        AddNewVictim();
+        AddNewVictim();
     }
 
     private void AddNewVictim()
