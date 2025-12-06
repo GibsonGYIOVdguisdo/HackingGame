@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 867723399647918384}
   - component: {fileID: 5966550520486490536}
   m_Layer: 5
-  m_Name: TargetButton
+  m_Name: VictimButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
