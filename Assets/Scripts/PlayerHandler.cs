@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerHandler : MonoBehaviour
 {
-    private static int s_money = 0;
+    private static int s_money;
 
     public int GetMoney()
     {

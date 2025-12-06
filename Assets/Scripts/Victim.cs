@@ -12,6 +12,50 @@ public class Victim
 
     private enum _hackTypes { Malware, Email };
 
+    public string FirstName
+    {
+        get
+        {
+            return _firstName;
+        }
+    }
+
+    public string LastName { 
+        get { 
+            return _lastName; 
+        } 
+    }
+
+    public string Description
+    {
+        get
+        {
+            return _description;
+        }
+    }
+
+    public string HackingDescription
+    {
+        get
+        {
+            return _hackingDescription;
+        }
+    }
+
+    public string HackType
+    {
+        get
+        {
+            return _hackType;
+        }
+    }
+    public int Money
+    {
+        get
+        {
+            return _money;
+        }
+    }
 
     public Victim()
     {
@@ -48,5 +92,4 @@ public class Victim
         string randomHackType = hacktypes[UnityEngine.Random.Range(0, hacktypes.Length)];
         return randomHackType;
     }
-
 }
