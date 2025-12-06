@@ -26,8 +26,6 @@ public class VictimListManager : MonoBehaviour
         victimItem.transform.SetParent(VictimListGameObject.transform);
 
         VictimListItem victimListItem = victimItem.GetComponent<VictimListItem>();
-        victimListItem.Name = newVictim.FirstName + " " + newVictim.LastName;
-        victimListItem.Description = newVictim.Vulnerability;
-        victimListItem.Money = newVictim.Money;
+        victimListItem.Victim = newVictim;
     }
 }

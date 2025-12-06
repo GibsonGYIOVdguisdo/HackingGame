@@ -6,40 +6,22 @@ public class VictimListItem : MonoBehaviour
 {
     public GameObject NameAndDescriptionGameObject;
     public GameObject MoneyTextGameObject;
-    private string _defaultNameText;
-    private string _defaultMoneyText;
 
-    private string _name = "";
-    private string _description = "";
-    private string _money = "";
+    private Victim _victim;
+    private String _defaultNameText;
+    private String _defaultMoneyText;
 
-    public string Name
-    {
+    public Victim Victim {
+        get
+        {
+            return _victim;
+        }
         set
         {
-            _name = value;
+            _victim = value;
             UpdateDisplayedDetails();
         }
     }
-
-    public string Description
-    {
-        set
-        {
-            _description = value;
-            UpdateDisplayedDetails();
-        }
-    }
-
-    public int Money
-    {
-        set
-        {
-            _money = "£" + value.ToString();
-            UpdateDisplayedDetails();
-        }
-    }
-
 
     void Awake()
     {
@@ -51,10 +33,10 @@ public class VictimListItem : MonoBehaviour
     {
         string newNameText = _defaultNameText;
         string newMoneyText = _defaultMoneyText;
-
-        newNameText = newNameText.Replace("{Name}", _name);
-        newNameText = newNameText.Replace("{Description}", _description);
-        newMoneyText = newMoneyText.Replace("{Money}", _money);
+        
+        newNameText = newNameText.Replace("{Name}", _victim.FirstName + " " + _victim.LastName);
+        newNameText = newNameText.Replace("{Description}", _victim.Vulnerability);
+        newMoneyText = newMoneyText.Replace("{Money}", "£" + _victim.Money.ToString());
 
         NameAndDescriptionGameObject.GetComponent<TextMeshProUGUI>().text = newNameText;
         MoneyTextGameObject.GetComponent<TextMeshProUGUI>().text = newMoneyText;
