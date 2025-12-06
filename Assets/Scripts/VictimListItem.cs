@@ -47,4 +47,9 @@ public class VictimListItem : MonoBehaviour
         NameAndDescriptionGameObject.GetComponent<TextMeshProUGUI>().text = newNameText;
         MoneyTextGameObject.GetComponent<TextMeshProUGUI>().text = newMoneyText;
     }
+
+    public void Destroy()
+    {
+        Destroy(this.gameObject);
+    }
 }
