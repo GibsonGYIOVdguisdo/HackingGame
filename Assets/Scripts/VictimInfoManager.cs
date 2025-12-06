@@ -6,10 +6,10 @@ public class VictimInfoManager : MonoBehaviour
     public GameObject NameGameObject;
     public GameObject DescriptionGameObject;
     public GameObject VulnerabilityGameObject;
-
+    
     private Victim _victim;
 
-    public Victim victim { 
+    public Victim Victim { 
         get
         {
             return _victim;

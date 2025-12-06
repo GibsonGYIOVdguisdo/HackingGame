@@ -10,7 +10,7 @@ public class VictimListManager : MonoBehaviour
 
     public const float SecondsBetweenResets = 600;
     public const float MaxVictimCount = 10;
-
+    
     private float _resetTimer = 0;
 
     private void Start()
