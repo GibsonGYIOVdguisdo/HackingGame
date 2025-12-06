@@ -8,8 +8,8 @@ public class VictimListItem : MonoBehaviour
     public GameObject MoneyTextGameObject;
 
     private Victim _victim;
-    private String _defaultNameText;
-    private String _defaultMoneyText;
+    private string _defaultNameText;
+    private string _defaultMoneyText;
 
     public Victim Victim {
         get
