@@ -1,9 +1,10 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
+using UnityEngine;
 
 public class VictimListManager : MonoBehaviour
 {
-    private List<Victim> _victims = new List<Victim>();
+    private HashSet<VictimListItem> _victimListItems = new HashSet<VictimListItem>();
     public GameObject VictimListGameObject;
     public GameObject VictimItemPrefab;
 
@@ -22,7 +23,7 @@ public class VictimListManager : MonoBehaviour
     {
         Victim newVictim = new Victim();
         GameObject victimItem = Instantiate(VictimItemPrefab);
-        _victims.Add(newVictim);
+        _victimListItems.Add(victimItem.GetComponent<VictimListItem>());
         victimItem.transform.SetParent(VictimListGameObject.transform);
     }
 }
