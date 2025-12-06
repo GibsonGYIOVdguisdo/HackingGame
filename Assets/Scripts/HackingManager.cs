@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class HackingManager : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class HackingManager : MonoBehaviour
     public GameObject PlayerTextGameObject;
     private TextMeshProUGUI _grayTextTMP;
     private TextMeshProUGUI _playerTextTMP;
+    private string _textToType = "";
+    private int _textPosition = 0;
 
     private void Start()
     {
@@ -15,11 +18,43 @@ public class HackingManager : MonoBehaviour
         ChooseTextToType();
     }
 
+    private void Update()
+    {
+        char currentChar = _textToType[_textPosition];
+        Debug.Log(currentChar);
+
+        if (char.IsLetterOrDigit(currentChar))
+        {
+            if (Input.GetKeyDown(currentChar.ToString().ToLower()))
+            {
+                IncrementPosition();
+            }
+        }
+        else
+        {
+            if (Input.anyKeyDown)
+            {
+                IncrementPosition();
+            }
+        }
+    }
+
     private void ChooseTextToType()
     {
-        _grayTextTMP.text = "private int _money = 0;\r\nprivate string _firstName;\r\nprivate string _lastName;\r\nprivate string _description;\r\nprivate Vulnerability _vulnerability;";
+        _textToType = "private int _money = 0;\nprivate string _firstName;\nprivate string _lastName;\nprivate string _description;\nprivate Vulnerability _vulnerability;";
+        _grayTextTMP.text = _textToType;
         _playerTextTMP.text = "";
     }
 
+    private void UpdatePlayerText()
+    {
+        _playerTextTMP.text = _textToType.Substring(0, _textPosition);
+    }
+    
+    private void IncrementPosition()
+    {
+        _textPosition += 1;
+        UpdatePlayerText();
+    }
 
 }
