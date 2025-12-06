@@ -8,6 +8,34 @@ public class VictimListManager : MonoBehaviour
     public GameObject VictimListGameObject;
     public GameObject VictimItemPrefab;
 
+    public const float SecondsBetweenResets = 600;
+    public const float MaxVictimCount = 10;
+
+    private float _resetTimer = 0;
+
+    private void Start()
+    {
+        RegenerateVictimList();
+    }
+
+
+    void Update()
+    {
+        _resetTimer += Time.deltaTime;
+        if (_resetTimer > SecondsBetweenResets)
+        {
+            RegenerateVictimList();
+            _resetTimer = 0;
+        }
+    }
+    
+    private void RegenerateVictimList()
+    {
+        for (int i = 0; i < MaxVictimCount; i++)
+        {
+            CreateVictim();
+        }
+    }
 
     private VictimListItem CreateVictim()
     {

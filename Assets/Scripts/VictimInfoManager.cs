@@ -21,11 +21,6 @@ public class VictimInfoManager : MonoBehaviour
             UpdateDisplayedDetails();
         }
     }
-    void Start()
-    {
-        _victim = new Victim();
-        UpdateDisplayedDetails();
-    }
 
     private void UpdateDisplayedDetails()
     {
