@@ -24,5 +24,10 @@ public class VictimListManager : MonoBehaviour
         GameObject victimItem = Instantiate(VictimItemPrefab);
         _victims.Add(newVictim);
         victimItem.transform.SetParent(VictimListGameObject.transform);
+
+        VictimListItem victimListItem = victimItem.GetComponent<VictimListItem>();
+        victimListItem.Name = newVictim.FirstName + " " + newVictim.LastName;
+        victimListItem.Description = newVictim.Description;
+        victimListItem.Money = newVictim.Money;
     }
 }

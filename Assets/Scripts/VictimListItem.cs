@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -40,7 +41,7 @@ public class VictimListItem : MonoBehaviour
     }
 
 
-    void Start()
+    void Awake()
     {
         _defaultNameText = NameAndDescriptionGameObject.GetComponent<TextMeshProUGUI>().text;
         _defaultMoneyText = MoneyTextGameObject.GetComponent<TextMeshProUGUI>().text;
@@ -58,6 +59,4 @@ public class VictimListItem : MonoBehaviour
         NameAndDescriptionGameObject.GetComponent<TextMeshProUGUI>().text = newNameText;
         MoneyTextGameObject.GetComponent<TextMeshProUGUI>().text = newMoneyText;
     }
-
-
 }
