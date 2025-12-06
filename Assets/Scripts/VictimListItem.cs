@@ -29,6 +29,12 @@ public class VictimListItem : MonoBehaviour
         _defaultMoneyText = MoneyTextGameObject.GetComponent<TextMeshProUGUI>().text;
     }
 
+    private void Start()
+    {
+        _victim = new Victim();
+        UpdateDisplayedDetails();
+    }
+
     private void UpdateDisplayedDetails()
     {
         string newNameText = _defaultNameText;

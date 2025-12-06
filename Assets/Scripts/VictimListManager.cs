@@ -24,8 +24,5 @@ public class VictimListManager : MonoBehaviour
         GameObject victimItem = Instantiate(VictimItemPrefab);
         _victims.Add(newVictim);
         victimItem.transform.SetParent(VictimListGameObject.transform);
-
-        VictimListItem victimListItem = victimItem.GetComponent<VictimListItem>();
-        victimListItem.Victim = newVictim;
     }
 }
