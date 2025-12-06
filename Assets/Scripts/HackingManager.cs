@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 
 public class HackingManager : MonoBehaviour
 {
@@ -10,6 +9,19 @@ public class HackingManager : MonoBehaviour
     private TextMeshProUGUI _playerTextTMP;
     private string _textToType = "";
     private int _textPosition = 0;
+    private Victim _victim;
+
+    public Victim Victim
+    {
+        get
+        {
+            return _victim;
+        }
+        set
+        {
+            _victim = value;
+        }
+    }
 
     private void Start()
     {
@@ -37,6 +49,11 @@ public class HackingManager : MonoBehaviour
                 IncrementPosition();
             }
         }
+
+        if (_textPosition == _textToType.Length)
+        {
+            FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
+        }
     }
 
     private void ChooseTextToType()
@@ -56,5 +73,4 @@ public class HackingManager : MonoBehaviour
         _textPosition += 1;
         UpdatePlayerText();
     }
-
 }
