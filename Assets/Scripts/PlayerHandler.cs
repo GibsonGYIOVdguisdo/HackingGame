@@ -4,15 +4,16 @@ using UnityEngine;
 public class PlayerHandler : MonoBehaviour
 {
     private static int s_money;
-
-    public int GetMoney()
-    {
-        return s_money;
-    }
-
-    public void SetMoney(int amount)
-    {
-        s_money = amount;
+    
+    public int Money { 
+        set
+        {
+            s_money = value;
+        }
+        get 
+        {
+            return s_money;
+        } 
     }
 }
     
