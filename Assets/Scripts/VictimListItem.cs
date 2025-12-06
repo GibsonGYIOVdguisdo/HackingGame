@@ -52,4 +52,13 @@ public class VictimListItem : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+    public void OnClick()
+    {
+        VictimInfoManager victimInfoManager = FindFirstObjectByType<VictimInfoManager>(FindObjectsInactive.Include);
+        victimInfoManager.Victim = _victim;
+        victimInfoManager.gameObject.SetActive(true);
+
+        FindFirstObjectByType<VictimListManager>().gameObject.SetActive(false);
+    }
 }
