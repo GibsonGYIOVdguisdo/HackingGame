@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
     
 public class Victim
@@ -7,10 +8,7 @@ public class Victim
     private string _firstName;
     private string _lastName;
     private string _description;
-    private string _hackingDescription;
-    private string _hackType;
-
-    private enum _hackTypes { Malware, Email };
+    private Vulnerability _vulnerability;
 
     public string FirstName
     {
@@ -34,19 +32,19 @@ public class Victim
         }
     }
 
-    public string HackingDescription
+    public string VulnerabilityDescription
     {
         get
         {
-            return _hackingDescription;
+            return _vulnerability.Description;
         }
     }
 
-    public string HackType
+    public string Vulnerability
     {
         get
         {
-            return _hackType;
+            return _vulnerability.Name;
         }
     }
     public int Money
@@ -62,8 +60,7 @@ public class Victim
         _firstName = ChooseFirstName();
         _lastName = ChooseLastName();
         _description = ChooseDescription();
-        _hackingDescription = ChooseHackingDescription();
-        _hackType = ChooseHackingType();
+        _vulnerability = new Vulnerability();
     }
 
     private string ChooseFirstName()
@@ -79,17 +76,5 @@ public class Victim
     private string ChooseDescription()
     {
         return "This is a victim description";
-    }
-
-    private string ChooseHackingDescription()
-    {
-        return "This is a description of the hack";
-    }
-
-    private string ChooseHackingType()
-    {
-        var hacktypes = Enum.GetNames(typeof(_hackTypes));
-        string randomHackType = hacktypes[UnityEngine.Random.Range(0, hacktypes.Length)];
-        return randomHackType;
     }
 }
