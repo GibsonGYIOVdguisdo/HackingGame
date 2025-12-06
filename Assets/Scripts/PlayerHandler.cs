@@ -15,3 +15,4 @@ public class PlayerHandler : MonoBehaviour
         s_money = amount;
     }
 }
+    
