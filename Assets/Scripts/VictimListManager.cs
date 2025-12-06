@@ -27,7 +27,7 @@ public class VictimListManager : MonoBehaviour
 
         VictimListItem victimListItem = victimItem.GetComponent<VictimListItem>();
         victimListItem.Name = newVictim.FirstName + " " + newVictim.LastName;
-        victimListItem.Description = newVictim.Description;
+        victimListItem.Description = newVictim.Vulnerability;
         victimListItem.Money = newVictim.Money;
     }
 }
