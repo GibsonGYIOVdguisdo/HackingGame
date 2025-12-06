@@ -67,7 +67,7 @@ public class Victim
     {
         return "FirstName";
     }
-    
+
     private string ChooseLastName()
     {
         return "LastName";
