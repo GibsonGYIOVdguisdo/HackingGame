@@ -1,16 +1,25 @@
+using TMPro;
 using UnityEngine;
 
 public class BankUpdater : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject MoneyTextGameObject;
+
+    private PlayerHandler _playerHandler;
+
     void Start()
     {
-        
+        _playerHandler = FindFirstObjectByType<PlayerHandler>();
+        _playerHandler.OnMoneyChanged += UpdateMoney;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateMoney(int amount)
     {
-        
+        MoneyTextGameObject.GetComponent<TextMeshProUGUI>().text = FormatMoney(amount);
+    }
+
+    private string FormatMoney(int amount)
+    {
+        return "£" + amount.ToString();
     }
 }
