@@ -1,3 +1,4 @@
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -22,14 +23,18 @@ public class HackingManager : MonoBehaviour
         {
             _victim = value;
             _textPosition = 0;
+            if (_grayTextTMP)
+            {
+                SetTextToType(Vulnerability.GetRandomTypingText(_victim.Vulnerability));
+            }
         }
     }
 
-    private void Start()
+    void Start()
     {
         _grayTextTMP = GrayTextGameObject.GetComponent<TextMeshProUGUI>();
         _playerTextTMP = PlayerTextGameObject.GetComponent<TextMeshProUGUI>();
-        ChooseTextToType();
+        SetTextToType(Vulnerability.GetRandomTypingText(_victim.Vulnerability));
     }
 
     private void Update()
@@ -67,14 +72,14 @@ public class HackingManager : MonoBehaviour
         SendHackSuccessNotification();
     }
 
-
-    private void ChooseTextToType()
+    private void SetTextToType(string textToType)
     {
-        _textToType = "private int _money = 0;\nprivate string _firstName;\nprivate string _lastName;\nprivate string _description;\nprivate Vulnerability _vulnerability;";
-        _grayTextTMP.text = _textToType;
+        _textToType = textToType;
+        _grayTextTMP.text = textToType;
         _playerTextTMP.text = "";
+        _textPosition = 0;
     }
-    
+
     private void UpdatePlayerText()
     {
         _playerTextTMP.text = _textToType.Substring(0, _textPosition);
