@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerHandler : MonoBehaviour
 {
     private static int s_money;
-    
+
     public int Money { 
         set
         {
