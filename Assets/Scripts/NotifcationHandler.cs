@@ -33,13 +33,13 @@ public class NotifcationHandler : MonoBehaviour
         Destroy(notification);
     }
 
-    void CreateNotification(string person)
+    void CreateNotification(string text)
     {
         GameObject notification = Instantiate(NotificationPrefab);
         notification.transform.SetParent(transform);
         notification.transform.position = new Vector2(845 + 1000, 60);
 
-        notification.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = "Hack on " + person + " was successful!";
+        notification.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = text;
 
         for (float i = 1; i < 101; i++)
         {
