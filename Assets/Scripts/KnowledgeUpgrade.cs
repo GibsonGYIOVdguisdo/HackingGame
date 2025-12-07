@@ -1,5 +1,12 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class KnowledgeUpgrade : UpgradeItem { 
-    
+public class KnowledgeUpgrade: Upgrade
+{
+    public override string Name 
+    { 
+        get 
+        {
+            return "Knowledge Upgrade";
+        } 
+    }
 }
