@@ -21,7 +21,7 @@ public class HackingManager : MonoBehaviour
         {
             _victim = value;
             _textPosition = 0;
-}
+        }
     }
 
     private void Start()
