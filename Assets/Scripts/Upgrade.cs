@@ -22,7 +22,7 @@ public abstract class Upgrade : MonoBehaviour
     {
         get
         {
-            return BaseCost * ((int)Mathf.Pow(Multiplier, _level));
+            return (int)((float)BaseCost * Mathf.Max(1, Multiplier * (float)_level));
         }
     }
 
