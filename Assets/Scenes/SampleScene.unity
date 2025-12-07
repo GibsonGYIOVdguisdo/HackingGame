@@ -1185,6 +1185,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423481458}
   m_CullTransparentMesh: 1
+--- !u!1 &464026455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2065011921119289967, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
+  m_PrefabInstance: {fileID: 1290281663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &467567455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3186,7 @@ GameObject:
   - component: {fileID: 1110766512}
   - component: {fileID: 1110766514}
   - component: {fileID: 1110766513}
+  - component: {fileID: 1110766515}
   m_Layer: 5
   m_Name: PurchasePanel
   m_TagString: Untagged
@@ -3247,6 +3253,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110766511}
   m_CullTransparentMesh: 1
+--- !u!114 &1110766515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110766511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3b91530af09ee42becec9fadf6e56e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultVictimMoney: 10
+  DefaultVictimMoneyVariance: 4
 --- !u!1 &1117617571
 GameObject:
   m_ObjectHideFlags: 0
@@ -3919,13 +3939,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2065011921119289967, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1290281667}
   m_SourcePrefab: {fileID: 100100000, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
 --- !u!224 &1290281664 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6023766568787670337, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
   m_PrefabInstance: {fileID: 1290281663}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1290281667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464026455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daa10f5db80562d448053fe5bef9675b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoTMP: {fileID: 0}
+  BaseCost: 1
+  Multiplier: 2
+  Modifier: 0.1
 --- !u!1 &1293707563
 GameObject:
   m_ObjectHideFlags: 0
@@ -6155,6 +6194,7 @@ GameObject:
   - component: {fileID: 2015702176}
   - component: {fileID: 2015702175}
   - component: {fileID: 2015702174}
+  - component: {fileID: 2015702178}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6249,6 +6289,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2015702178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015702173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238b7f9e8cb796241b79a6cc522cb7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LingerTimer: 3
+  NotificationPrefab: {fileID: 0}
 --- !u!1 &2060075617
 GameObject:
   m_ObjectHideFlags: 0
