@@ -47,4 +47,11 @@ public class VictimInfoManager : MonoBehaviour
             gameObject.transform.parent.GetChild(i).gameObject.SetActive(false);
         }
     }
+
+    public void LoadNextPanel()
+    {
+        HackingManager hackingManager = FindFirstObjectByType<HackingManager>(FindObjectsInactive.Include);
+        hackingManager.Victim = _victim;
+        hackingManager.ShowPanel();
+    }
 }

@@ -34,7 +34,7 @@ public class HackingManager : MonoBehaviour
     {
         char currentChar = _textToType[_textPosition];
 
-        if (_textPosition >= _textToType.Length - 1)
+        if (_textPosition >= _textToType.Length)
         {
             FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
             FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include).ShowPanel();
