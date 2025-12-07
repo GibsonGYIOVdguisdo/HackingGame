@@ -47,7 +47,7 @@ public class HackingManager : MonoBehaviour
         }
 
         char currentChar = _textToType[_textPosition];
-
+        
         if (currentChar == ' ')
         {
             IncrementPosition();
