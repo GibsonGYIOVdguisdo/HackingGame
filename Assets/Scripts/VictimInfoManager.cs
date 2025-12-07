@@ -57,9 +57,7 @@ public class VictimInfoManager : MonoBehaviour
             capchaManager.Victim = _victim;
             capchaManager.ShowPanel();
         }
-
-        if (_victim.Vulnerability == "Malware")
-        {
+        else {
             HackingManager hackingManager = FindFirstObjectByType<HackingManager>(FindObjectsInactive.Include);
             hackingManager.Victim = _victim;
             hackingManager.ShowPanel();
