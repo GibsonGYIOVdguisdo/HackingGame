@@ -8,12 +8,12 @@ public class PlayerHandler : MonoBehaviour
     public int Money { 
         set
         {
-            s_money = value;
+            s_money = Mathf.Max(0, value);
         }
         get 
         {
             return s_money;
-        } 
+        }
     }
 }
     

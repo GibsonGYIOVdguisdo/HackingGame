@@ -51,4 +51,23 @@ public class VictimListManager : MonoBehaviour
         _victimListItems.Remove(victimListItem);
         victimListItem.Destroy();
     }
+
+    public void HidePanel()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void ShowPanel()
+    {
+        HideAllPanels();
+        gameObject.SetActive(true);
+    }
+
+    private void HideAllPanels()
+    {
+        for (int i = 0; i < gameObject.transform.parent.childCount; i++)
+        {
+            gameObject.transform.parent.GetChild(i).gameObject.SetActive(false);
+        }
+    }
 }
