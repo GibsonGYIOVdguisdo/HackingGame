@@ -20,6 +20,7 @@ public class HackingManager : MonoBehaviour
         set
         {
             _victim = value;
+            _textPosition = 0;
         }
     }
 
@@ -37,7 +38,10 @@ public class HackingManager : MonoBehaviour
         if (_textPosition >= _textToType.Length - 1)
         {
             FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
-            FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include).ShowPanel();
+            VictimListManager victimListManager = FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include);
+            victimListManager.RemoveVictim(_victim);
+            victimListManager.CreateVictim();
+            victimListManager.ShowPanel();
         }
         else if (char.IsLetterOrDigit(currentChar))
         {
