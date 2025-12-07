@@ -53,12 +53,18 @@ public class CapchaManager : MonoBehaviour
 
     private void EndCapchaGame()
     {
+        ResetInputBox();
         FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
         VictimListManager victimListManager = FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include);
         victimListManager.RemoveVictim(_victim);
         victimListManager.CreateVictim();
         victimListManager.ShowPanel();
         SendHackSuccessNotification();
+    }
+
+    void ResetInputBox()
+    {
+        InputFieldGameObject.GetComponent<TMP_InputField>().text = "";
     }
 
     void SendAnswer(string guess)
@@ -69,7 +75,7 @@ public class CapchaManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Boo");
+            ResetInputBox();
         }
     }
 
