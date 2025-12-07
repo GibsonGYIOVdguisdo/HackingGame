@@ -34,10 +34,13 @@ public class HackingManager : MonoBehaviour
     {
         char currentChar = _textToType[_textPosition];
 
-        if (_textPosition >= _textToType.Length)
+        if (_textPosition >= _textToType.Length - 1)
         {
             FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
-            FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include).ShowPanel();
+            VictimListManager victimListManager = FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include);
+            victimListManager.RemoveVictim(_victim);
+            victimListManager.CreateVictim();
+            victimListManager.ShowPanel();
         }
         else if (char.IsLetterOrDigit(currentChar))
         {
