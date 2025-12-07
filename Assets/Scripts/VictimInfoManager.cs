@@ -50,8 +50,20 @@ public class VictimInfoManager : MonoBehaviour
 
     public void LoadNextPanel()
     {
-        HackingManager hackingManager = FindFirstObjectByType<HackingManager>(FindObjectsInactive.Include);
-        hackingManager.Victim = _victim;
-        hackingManager.ShowPanel();
+
+        if(_victim.Vulnerability == "DDOS")
+        {
+            CapchaManager capchaManager = FindFirstObjectByType<CapchaManager>(FindObjectsInactive.Include);
+            capchaManager.Victim = _victim;
+            capchaManager.ShowPanel();
+        }
+
+        if (_victim.Vulnerability == "Malware")
+        {
+            HackingManager hackingManager = FindFirstObjectByType<HackingManager>(FindObjectsInactive.Include);
+            hackingManager.Victim = _victim;
+            hackingManager.ShowPanel();
+        }
+
     }
 }
