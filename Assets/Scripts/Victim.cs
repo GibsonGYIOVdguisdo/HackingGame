@@ -55,12 +55,13 @@ public class Victim
         }
     }
 
-    public Victim()
+    public Victim(int money)
     {
         _firstName = ChooseFirstName();
         _lastName = ChooseLastName();
         _description = ChooseDescription();
         _vulnerability = new Vulnerability();
+        _money = money;
     }
 
     private string ChooseFirstName()

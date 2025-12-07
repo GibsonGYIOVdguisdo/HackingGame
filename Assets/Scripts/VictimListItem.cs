@@ -31,7 +31,9 @@ public class VictimListItem : MonoBehaviour
 
     private void Start()
     {
-        _victim = new Victim();
+        int victimsMoney = FindFirstObjectByType<UpgradeManager>().CalculateVictimMoney();
+
+        _victim = new Victim(victimsMoney);
         UpdateDisplayedDetails();
     }
 
