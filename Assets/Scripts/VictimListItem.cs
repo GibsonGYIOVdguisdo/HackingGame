@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -10,6 +9,12 @@ public class VictimListItem : MonoBehaviour
     private Victim _victim;
     private string _defaultNameText;
     private string _defaultMoneyText;
+    private float _lifeTimeTimer = 0;
+
+    public float DefaultLifeTime = 10;
+    public float LifeTimeVariance = 2;
+
+    private float _lifeTime;
 
     public Victim Victim {
         get
@@ -32,9 +37,19 @@ public class VictimListItem : MonoBehaviour
     private void Start()
     {
         int victimsMoney = FindFirstObjectByType<UpgradeManager>().CalculateVictimMoney();
+        _lifeTime = Random.Range(DefaultLifeTime - LifeTimeVariance, DefaultLifeTime + LifeTimeVariance);
 
         _victim = new Victim(victimsMoney);
         UpdateDisplayedDetails();
+    }
+
+    public void Update()
+    {
+        _lifeTimeTimer += Time.deltaTime;
+        if (_lifeTimeTimer >= _lifeTime)
+        {
+            FindFirstObjectByType<VictimListManager>().RemoveVictim(this);
+        }
     }
 
     private void UpdateDisplayedDetails()

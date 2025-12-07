@@ -1,6 +1,8 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class VictimListManager : MonoBehaviour
 {
@@ -9,9 +11,13 @@ public class VictimListManager : MonoBehaviour
     public GameObject VictimItemPrefab;
 
     public const float SecondsBetweenResets = 600;
-    public const float MaxVictimCount = 10;
-    
+    public const int DefaultVictimCount = 5;
+    public const int MaxVictimCount = 10;
     private float _resetTimer = 0;
+
+    public float TimeBetweenVictimSpawns = 10;
+    private float _victimSpawnTimer = 0;
+
 
     private void Start()
     {
@@ -27,11 +33,21 @@ public class VictimListManager : MonoBehaviour
             RegenerateVictimList();
             _resetTimer = 0;
         }
+
+        _victimSpawnTimer += Time.deltaTime;
+        if (_victimSpawnTimer > TimeBetweenVictimSpawns)
+        {
+            if (_victimListItems.Count < MaxVictimCount)
+            {
+                CreateVictim();
+                _victimSpawnTimer = 0;
+            }
+        }
     }
     
     private void RegenerateVictimList()
     {
-        for (int i = 0; i < MaxVictimCount; i++)
+        for (int i = 0; i < DefaultVictimCount; i++)
         {
             CreateVictim();
         }
@@ -43,7 +59,14 @@ public class VictimListManager : MonoBehaviour
         _victimListItems.Add(victimItem.GetComponent<VictimListItem>());
         victimItem.transform.SetParent(VictimListGameObject.transform);
         victimItem.transform.localScale = new Vector3(1, 1, 1);
+
         return victimItem.GetComponent<VictimListItem>();
+    }
+
+    private IEnumerator LifeSpanEnd(VictimListItem victimListItem, float lifeSpan)
+    {
+        yield return new WaitForSeconds(lifeSpan);
+        RemoveVictim(victimListItem);
     }
 
     public void RemoveVictim(VictimListItem victimListItem)
