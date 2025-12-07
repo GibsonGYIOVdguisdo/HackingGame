@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class HackingManager : MonoBehaviour
 {
@@ -37,11 +38,7 @@ public class HackingManager : MonoBehaviour
 
         if (_textPosition >= _textToType.Length - 1)
         {
-            FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
-            VictimListManager victimListManager = FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include);
-            victimListManager.RemoveVictim(_victim);
-            victimListManager.CreateVictim();
-            victimListManager.ShowPanel();
+            EndTypingGame();
         }
         else if (char.IsLetterOrDigit(currentChar))
         {
@@ -60,13 +57,24 @@ public class HackingManager : MonoBehaviour
 
     }
 
+    private void EndTypingGame()
+    {
+        FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
+        VictimListManager victimListManager = FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include);
+        victimListManager.RemoveVictim(_victim);
+        victimListManager.CreateVictim();
+        victimListManager.ShowPanel();
+        SendHackSuccessNotification();
+    }
+
+
     private void ChooseTextToType()
     {
         _textToType = "private int _money = 0;\nprivate string _firstName;\nprivate string _lastName;\nprivate string _description;\nprivate Vulnerability _vulnerability;";
         _grayTextTMP.text = _textToType;
         _playerTextTMP.text = "";
     }
-
+    
     private void UpdatePlayerText()
     {
         _playerTextTMP.text = _textToType.Substring(0, _textPosition);
@@ -95,5 +103,10 @@ public class HackingManager : MonoBehaviour
         {
             gameObject.transform.parent.GetChild(i).gameObject.SetActive(false);
         }
+    }
+
+    private void SendHackSuccessNotification()
+    {
+        FindFirstObjectByType<NotifcationHandler>().CreateNotification($"Hack on {_victim.FirstName} was a success! \n+£{_victim.Money}");
     }
 }

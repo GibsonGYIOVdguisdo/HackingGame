@@ -1,21 +1,21 @@
 using System.Data.SqlTypes;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHandler : MonoBehaviour
 {
-    private static int s_money;
-
+    private int _money = 10000;
     public event System.Action<int> OnMoneyChanged;
 
     public int Money { 
         set
         {
-            s_money = Mathf.Max(0, value);
-            OnMoneyChanged?.Invoke(s_money);
+            _money = Mathf.Max(0, value);
+            OnMoneyChanged?.Invoke(_money);
         }
         get 
         {
-            return s_money;
+            return _money;
         }
     }
 }
