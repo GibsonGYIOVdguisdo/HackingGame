@@ -1914,51 +1914,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614594419}
   m_CullTransparentMesh: 1
---- !u!1 &609648783
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 609648785}
-  - component: {fileID: 609648784}
-  m_Layer: 0
-  m_Name: NotificationHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &609648784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609648783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 238b7f9e8cb796241b79a6cc522cb7b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NotificationPrefab: {fileID: 2958311271446393333, guid: b7d3a55115956ef499de2d926d78b66d, type: 3}
---- !u!4 &609648785
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609648783}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 448.92776, y: 364.67725, z: -4.0740433}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,22 +2268,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704929658}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 --- !u!1 &797984437
-=======
---- !u!114 &780059831 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4001268919493497110, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-  m_PrefabInstance: {fileID: 1290281663}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &825981101
->>>>>>> main
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3241,7 +3181,6 @@ GameObject:
   - component: {fileID: 1110766512}
   - component: {fileID: 1110766514}
   - component: {fileID: 1110766513}
-  - component: {fileID: 1110766515}
   m_Layer: 5
   m_Name: PurchasePanel
   m_TagString: Untagged
@@ -3308,7 +3247,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110766511}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
 --- !u!1 &1117617571
 GameObject:
   m_ObjectHideFlags: 0
@@ -3354,15 +3292,11 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1117617573
-=======
---- !u!114 &1110766515
->>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 1117617571}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3410,16 +3344,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117617571}
   m_CullTransparentMesh: 1
-=======
-  m_GameObject: {fileID: 1110766511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab3b91530af09ee42becec9fadf6e56e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DefaultVictimMoney: 10
-  DefaultVictimMoneyVariance: 4
->>>>>>> main
 --- !u!1 &1158946824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3908,34 +3832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knowledge
       objectReference: {fileID: 0}
-    - target: {fileID: 3951246571893111103, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951246571893111103, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951246571893111103, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1686064689}
-    - target: {fileID: 3951246571893111103, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951246571893111103, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Purchase
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951246571893111103, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Upgrade, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951246571893111103, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4001268919493497110, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
       propertyPath: m_text
       value: "Programming Course\n\xA30\n"
@@ -4023,10 +3919,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2065011921119289967, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1686064689}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
 --- !u!224 &1290281664 stripped
 RectTransform:
@@ -5050,27 +4943,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631775266}
   m_CullTransparentMesh: 1
---- !u!1 &1686064685 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2065011921119289967, guid: 1808ff9e938046447a291de7624d2ddf, type: 3}
-  m_PrefabInstance: {fileID: 1290281663}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1686064689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686064685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daa10f5db80562d448053fe5bef9675b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InfoTMP: {fileID: 780059831}
-  BaseCost: 1
-  Multiplier: 2
-  Modifier: 0.1
 --- !u!1 &1694388089
 GameObject:
   m_ObjectHideFlags: 0
@@ -6770,7 +6642,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1553050905}
-  - {fileID: 609648785}
   - {fileID: 1369741992}
   - {fileID: 519420032}
   - {fileID: 619394802}
