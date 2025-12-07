@@ -11,6 +11,7 @@ public class BankUpdater : MonoBehaviour
     {
         _playerHandler = FindFirstObjectByType<PlayerHandler>();
         _playerHandler.OnMoneyChanged += UpdateMoney;
+        UpdateMoney(_playerHandler.Money);
     }
 
     private void UpdateMoney(int amount)
