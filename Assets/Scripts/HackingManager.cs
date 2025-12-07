@@ -20,7 +20,8 @@ public class HackingManager : MonoBehaviour
         set
         {
             _victim = value;
-        }
+            _textPosition = 0;
+}
     }
 
     private void Start()
