@@ -54,6 +54,6 @@ public abstract class Upgrade : MonoBehaviour
 
     public void UpdateDisplayedData()
     {
-        InfoTMP.text = Name + "\n£" + Cost;
+        InfoTMP.text = Name + " (" + _level + ")" + "\n£" + Cost;
     }
 }
