@@ -6341,7 +6341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LingerTimer: 3
-  NotificationPrefab: {fileID: 0}
+  NotificationPrefab: {fileID: 2958311271446393333, guid: b7d3a55115956ef499de2d926d78b66d, type: 3}
 --- !u!1 &2060075617
 GameObject:
   m_ObjectHideFlags: 0
