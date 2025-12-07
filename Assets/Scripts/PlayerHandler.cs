@@ -5,13 +5,13 @@ public class PlayerHandler : MonoBehaviour
 {
     private static int s_money;
 
-    public event System.Action<int> OnScoreChanged;
+    public event System.Action<int> OnMoneyChanged;
 
     public int Money { 
         set
         {
             s_money = Mathf.Max(0, value);
-            OnScoreChanged?.Invoke(s_money);
+            OnMoneyChanged?.Invoke(s_money);
         }
         get 
         {
