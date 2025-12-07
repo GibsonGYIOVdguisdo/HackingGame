@@ -47,7 +47,5 @@ public class NotifcationHandler : MonoBehaviour
             StartCoroutine(NotificationChangePosition(i / 100f, notification));
             StartCoroutine(NotificationChangeTransparency(i / 100f, notification));
         }
-
-        StartCoroutine(DeleteNotifcation(notification));
     }
 }
