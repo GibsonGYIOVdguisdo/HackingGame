@@ -7,8 +7,6 @@ public class PlayerHandler : MonoBehaviour
     private int _money = 10000;
     public event System.Action<int> OnMoneyChanged;
 
-    // Upgrade Related
-    public KnowledgeUpgrade KnowledgeUpgrade;
 
     public int Money { 
         set
