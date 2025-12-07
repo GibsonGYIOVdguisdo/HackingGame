@@ -37,7 +37,7 @@ public class VictimListManager : MonoBehaviour
         }
     }
 
-    private VictimListItem CreateVictim()
+    public VictimListItem CreateVictim()
     {
         Victim newVictim = new Victim();
         GameObject victimItem = Instantiate(VictimItemPrefab);
@@ -50,5 +50,35 @@ public class VictimListManager : MonoBehaviour
     {
         _victimListItems.Remove(victimListItem);
         victimListItem.Destroy();
+    }
+    public void RemoveVictim(Victim victim)
+    {
+        foreach(VictimListItem currentVictimItem in _victimListItems){
+            if (currentVictimItem.Victim == victim)
+            {
+                _victimListItems.Remove(currentVictimItem);
+                currentVictimItem.Destroy();
+                return;
+            }
+        }
+    }
+
+    public void HidePanel()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void ShowPanel()
+    {
+        HideAllPanels();
+        gameObject.SetActive(true);
+    }
+
+    private void HideAllPanels()
+    {
+        for (int i = 0; i < gameObject.transform.parent.childCount; i++)
+        {
+            gameObject.transform.parent.GetChild(i).gameObject.SetActive(false);
+        }
     }
 }

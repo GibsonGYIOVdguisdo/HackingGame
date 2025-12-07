@@ -57,8 +57,6 @@ public class VictimListItem : MonoBehaviour
     {
         VictimInfoManager victimInfoManager = FindFirstObjectByType<VictimInfoManager>(FindObjectsInactive.Include);
         victimInfoManager.Victim = _victim;
-        victimInfoManager.gameObject.SetActive(true);
-
-        FindFirstObjectByType<VictimListManager>().gameObject.SetActive(false);
+        victimInfoManager.ShowPanel();
     }
 }
