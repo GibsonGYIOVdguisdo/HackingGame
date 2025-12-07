@@ -33,9 +33,13 @@ public class HackingManager : MonoBehaviour
     private void Update()
     {
         char currentChar = _textToType[_textPosition];
-        Debug.Log(currentChar);
 
-        if (char.IsLetterOrDigit(currentChar))
+        if (_textPosition >= _textToType.Length - 1)
+        {
+            FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
+            FindFirstObjectByType<VictimListManager>(FindObjectsInactive.Include).ShowPanel();
+        }
+        else if (char.IsLetterOrDigit(currentChar))
         {
             if (Input.GetKeyDown(currentChar.ToString().ToLower()))
             {
@@ -50,10 +54,6 @@ public class HackingManager : MonoBehaviour
             }
         }
 
-        if (_textPosition == _textToType.Length)
-        {
-            FindFirstObjectByType<PlayerHandler>().Money += _victim.Money;
-        }
     }
 
     private void ChooseTextToType()
@@ -72,5 +72,24 @@ public class HackingManager : MonoBehaviour
     {
         _textPosition += 1;
         UpdatePlayerText();
+    }
+
+    public void HidePanel()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void ShowPanel()
+    {
+        HideAllPanels();
+        gameObject.SetActive(true);
+    }
+
+    private void HideAllPanels()
+    {
+        for (int i = 0; i < gameObject.transform.parent.childCount; i++)
+        {
+            gameObject.transform.parent.GetChild(i).gameObject.SetActive(false);
+        }
     }
 }
