@@ -22,7 +22,7 @@ public abstract class Upgrade : MonoBehaviour
     {
         get
         {
-            return BaseCost * ((int)Mathf.Pow(Multiplier, _level));
+            return (int)((float)BaseCost * Mathf.Max(1, Multiplier * (float)_level));
         }
     }
 
@@ -43,7 +43,7 @@ public abstract class Upgrade : MonoBehaviour
 
     public void Purchase()
     {
-        if (FindFirstObjectByType<PlayerHandler>().Money > Cost)
+        if (FindFirstObjectByType<PlayerHandler>().Money >= Cost)
         {
             FindFirstObjectByType<PlayerHandler>().Money -= Cost;
             _level += 1;
@@ -54,6 +54,6 @@ public abstract class Upgrade : MonoBehaviour
 
     public void UpdateDisplayedData()
     {
-        InfoTMP.text = Name + "\n£" + Cost;
+        InfoTMP.text = Name + " (" + _level + ")" + "\n£" + Cost;
     }
 }

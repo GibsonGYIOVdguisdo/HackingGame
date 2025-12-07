@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHandler : MonoBehaviour
 {
-    private int _money = 10000;
+    private int _money = 25;
     public event System.Action<int> OnMoneyChanged;
 
     public int Money { 
