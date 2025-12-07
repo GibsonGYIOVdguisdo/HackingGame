@@ -43,7 +43,7 @@ public abstract class Upgrade : MonoBehaviour
 
     public void Purchase()
     {
-        if (FindFirstObjectByType<PlayerHandler>().Money > Cost)
+        if (FindFirstObjectByType<PlayerHandler>().Money >= Cost)
         {
             FindFirstObjectByType<PlayerHandler>().Money -= Cost;
             _level += 1;
