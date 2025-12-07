@@ -304,8 +304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 38.6}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 32.8}
+  m_SizeDelta: {x: 259.5411, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &125708406
 MonoBehaviour:
@@ -327,9 +327,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 8589688241463679145, guid: 4a05de8ea67b83f4fa4e46ac55209310, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -5355,7 +5355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1447342271
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5392,13 +5392,15 @@ MonoBehaviour:
   CapchaImageGameObject: {fileID: 125708404}
   InputFieldGameObject: {fileID: 960020463}
   _spritesForCapcha:
-  - {fileID: 21300000, guid: 89723c2dbc5fc214eb218aa215ea552c, type: 3}
-  - {fileID: 5465993106644770862, guid: ddc54c68ee5efc945a2f97847f216031, type: 3}
-  - {fileID: 4148821286614959646, guid: 81fc1644fd9528f4dabc3c556fb748ac, type: 3}
+  - {fileID: 8589688241463679145, guid: 4a05de8ea67b83f4fa4e46ac55209310, type: 3}
+  - {fileID: -977736667, guid: 4a05de8ea67b83f4fa4e46ac55209310, type: 3}
+  - {fileID: 220492397, guid: 4a05de8ea67b83f4fa4e46ac55209310, type: 3}
+  - {fileID: 1679806351, guid: 4a05de8ea67b83f4fa4e46ac55209310, type: 3}
   _answersForCapcha:
-  - A
-  - Gibo
-  - Jessica
+  - A6R3
+  - UwU2
+  - ABCD
+  - 96H2i
 --- !u!114 &1447342273
 MonoBehaviour:
   m_ObjectHideFlags: 0
