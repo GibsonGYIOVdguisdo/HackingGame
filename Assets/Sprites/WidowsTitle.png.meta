@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 2f3557430d4b9984cbd0ce7e14ed774a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2127855758791392013
+    second: WidowsTitle_0
+  - first:
+      213: 2059819223453906618
+    second: WidowsTitle_1
+  - first:
+      213: 1263005856863149231
+    second: WidowsTitle_2
+  - first:
+      213: 8544264709058466019
+    second: WidowsTitle_3
+  - first:
+      213: 554975054823228669
+    second: WidowsTitle_4
+  - first:
+      213: 6112570731358587611
+    second: WidowsTitle_5
+  - first:
+      213: -3066114837718954674
+    second: WidowsTitle_6
+  - first:
+      213: 3067143566853651301
+    second: WidowsTitle_7
+  - first:
+      213: -4526486987996820773
+    second: WidowsTitle_8
+  - first:
+      213: -1977033868047471231
+    second: WidowsTitle_9
+  - first:
+      213: 2853525266383230336
+    second: WidowsTitle_10
+  - first:
+      213: -6734383750610423648
+    second: WidowsTitle_11
+  - first:
+      213: 6466639986681379383
+    second: WidowsTitle_12
+  - first:
+      213: 7373825818908843216
+    second: WidowsTitle_13
+  - first:
+      213: -6167946632283350582
+    second: WidowsTitle_14
+  - first:
+      213: -6306888754995392388
+    second: WidowsTitle_15
+  - first:
+      213: -8989674667922760899
+    second: WidowsTitle_16
+  - first:
+      213: 2394503815545492907
+    second: WidowsTitle_17
+  - first:
+      213: -5264473480485051889
+    second: WidowsTitle_18
+  - first:
+      213: 3635150102486808965
+    second: WidowsTitle_19
+  - first:
+      213: -6340033330577873580
+    second: WidowsTitle_20
+  - first:
+      213: -3244216230168466648
+    second: WidowsTitle_21
+  - first:
+      213: -7667270020834283408
+    second: WidowsTitle_22
+  - first:
+      213: 4620698799888290089
+    second: WidowsTitle_23
+  - first:
+      213: 257837517917196247
+    second: WidowsTitle_24
+  - first:
+      213: -4352975206934285622
+    second: WidowsTitle_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WidowsTitle_0
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 501
+        width: 172
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f448f316765872e0800000000000000
+      internalID: -2127855758791392013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_1
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 503
+        width: 315
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6bd7b9ba2f59c10800000000000000
+      internalID: 2059819223453906618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_2
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 328
+        width: 278
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: facd0979229178110800000000000000
+      internalID: 1263005856863149231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_3
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 168
+        width: 197
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e01652cb73539670800000000000000
+      internalID: 8544264709058466019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_4
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 163
+        width: 223
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df401f93fdaa3b700800000000000000
+      internalID: 554975054823228669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_5
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 215
+        width: 227
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda0413c1b634d450800000000000000
+      internalID: 6112570731358587611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d0531dcc8f275d0800000000000000
+      internalID: -3066114837718954674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_7
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 193
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bbf69d2dea09a20800000000000000
+      internalID: 3067143566853651301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 166
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda85081110be21c0800000000000000
+      internalID: -4526486987996820773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_9
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 167
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d2d1afb2a2094e0800000000000000
+      internalID: -1977033868047471231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_10
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 166
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085df547c12c99720800000000000000
+      internalID: 2853525266383230336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 167
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0f3bbb8a9aa82a0800000000000000
+      internalID: -6734383750610423648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 166
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73afa706ece1eb950800000000000000
+      internalID: 6466639986681379383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_13
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 167
+        width: 66
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc5aab9387155660800000000000000
+      internalID: 7373825818908843216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_14
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 166
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac91f25973d076aa0800000000000000
+      internalID: -6167946632283350582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 167
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c701898b71e6978a0800000000000000
+      internalID: -6306888754995392388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_16
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 166
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bd224d4824e3380800000000000000
+      internalID: -8989674667922760899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_17
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 166
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba518ea988cfa3120800000000000000
+      internalID: 2394503815545492907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_18
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 194
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02693a0345d0f6b0800000000000000
+      internalID: -5264473480485051889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1
+        width: 70
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58973f322c5a27230800000000000000
+      internalID: 3635150102486808965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_20
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1
+        width: 141
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455e4cad64da308a0800000000000000
+      internalID: -6340033330577873580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_21
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 137
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b604af68a3af2d0800000000000000
+      internalID: -3244216230168466648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_22
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 194
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070bb2bf982689590800000000000000
+      internalID: -7667270020834283408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_23
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 107
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9215a65b315002040800000000000000
+      internalID: 4620698799888290089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_24
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 91
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df09314bd5049300800000000000000
+      internalID: 257837517917196247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WidowsTitle_25
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 92
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac27992cc102793c0800000000000000
+      internalID: -4352975206934285622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WidowsTitle_0: -2127855758791392013
+      WidowsTitle_1: 2059819223453906618
+      WidowsTitle_10: 2853525266383230336
+      WidowsTitle_11: -6734383750610423648
+      WidowsTitle_12: 6466639986681379383
+      WidowsTitle_13: 7373825818908843216
+      WidowsTitle_14: -6167946632283350582
+      WidowsTitle_15: -6306888754995392388
+      WidowsTitle_16: -8989674667922760899
+      WidowsTitle_17: 2394503815545492907
+      WidowsTitle_18: -5264473480485051889
+      WidowsTitle_19: 3635150102486808965
+      WidowsTitle_2: 1263005856863149231
+      WidowsTitle_20: -6340033330577873580
+      WidowsTitle_21: -3244216230168466648
+      WidowsTitle_22: -7667270020834283408
+      WidowsTitle_23: 4620698799888290089
+      WidowsTitle_24: 257837517917196247
+      WidowsTitle_25: -4352975206934285622
+      WidowsTitle_3: 8544264709058466019
+      WidowsTitle_4: 554975054823228669
+      WidowsTitle_5: 6112570731358587611
+      WidowsTitle_6: -3066114837718954674
+      WidowsTitle_7: 3067143566853651301
+      WidowsTitle_8: -4526486987996820773
+      WidowsTitle_9: -1977033868047471231
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
