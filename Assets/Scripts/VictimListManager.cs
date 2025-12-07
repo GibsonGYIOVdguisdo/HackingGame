@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEditor.VersionControl;
 using UnityEngine;
@@ -42,6 +43,7 @@ public class VictimListManager : MonoBehaviour
         GameObject victimItem = Instantiate(VictimItemPrefab);
         _victimListItems.Add(victimItem.GetComponent<VictimListItem>());
         victimItem.transform.SetParent(VictimListGameObject.transform);
+        victimItem.transform.localScale = new Vector3(1, 1, 1);
         return victimItem.GetComponent<VictimListItem>();
     }
 
