@@ -7,7 +7,6 @@ public class PlayerHandler : MonoBehaviour
     private int _money = 10000;
     public event System.Action<int> OnMoneyChanged;
 
-
     public int Money { 
         set
         {

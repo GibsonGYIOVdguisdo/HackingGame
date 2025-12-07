@@ -14,7 +14,7 @@ public abstract class Upgrade : MonoBehaviour
     public TextMeshProUGUI InfoTMP;
 
     public int BaseCost = 1;
-    public int Multiplier = 2;
+    public float Multiplier = 2;
 
     private int _level = 0;
 

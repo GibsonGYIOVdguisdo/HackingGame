@@ -2,10 +2,15 @@ using UnityEngine;
 
 public class UpgradeManager : MonoBehaviour
 {
-    private PlayerHandler _playerHandler;
+    public int DefaultVictimMoney = 10;
+    public int DefaultVictimMoneyVariance = 4;
 
-    void Start()
+    public int CalculateVictimMoney()
     {
-        _playerHandler = GetComponent<PlayerHandler>();
+        int newMoney = Random.Range(DefaultVictimMoney - DefaultVictimMoneyVariance, DefaultVictimMoney + DefaultVictimMoneyVariance);
+
+        newMoney = FindFirstObjectByType<KnowledgeUpgrade>().ApplyModifier(newMoney);
+
+        return newMoney;
     }
 }
