@@ -34,8 +34,6 @@ public class ButtonColorChanger : MonoBehaviour, IPointerEnterHandler, IPointerE
         gameObject.GetComponent<Image>().color = color;
     }
 
-
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         SetTextColors(Color.black);
