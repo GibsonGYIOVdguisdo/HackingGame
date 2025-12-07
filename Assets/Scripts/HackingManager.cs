@@ -39,11 +39,18 @@ public class HackingManager : MonoBehaviour
 
     private void Update()
     {
-        char currentChar = _textToType[_textPosition];
 
-        if (_textPosition >= _textToType.Length - 1)
+        if (_textPosition >= _textToType.Length)
         {
             EndTypingGame();
+            return;
+        }
+
+        char currentChar = _textToType[_textPosition];
+
+        if (currentChar == ' ')
+        {
+            IncrementPosition();
         }
         else if (char.IsLetterOrDigit(currentChar))
         {
