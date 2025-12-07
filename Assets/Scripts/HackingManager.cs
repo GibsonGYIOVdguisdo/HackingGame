@@ -26,6 +26,7 @@ public class HackingManager : MonoBehaviour
             if (_grayTextTMP)
             {
                 SetTextToType(Vulnerability.GetRandomTypingText(_victim.Vulnerability));
+
             }
         }
     }
@@ -81,8 +82,14 @@ public class HackingManager : MonoBehaviour
 
     private void SetTextToType(string textToType)
     {
-        _textToType = textToType;
-        _grayTextTMP.text = textToType;
+        string newText = Vulnerability.GetRandomTypingText(_victim.Vulnerability);
+        if (_victim.Vulnerability == "Email")
+        {
+            newText = "To: " + _victim.GenerateEmail() + "\n" + newText;
+        }
+
+        _textToType = newText;
+        _grayTextTMP.text = newText;
         _playerTextTMP.text = "";
         _textPosition = 0;
     }
