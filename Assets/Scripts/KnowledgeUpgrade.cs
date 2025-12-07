@@ -20,7 +20,6 @@ public class KnowledgeUpgrade: Upgrade
         float newAmount = amount;
         for (int i = 0; i < Level; i++)
         {
-            Debug.Log(i);
             if (((int)Random.Range(1, 100)) <= Chance)
             {
                 newAmount += newAmount * Modifier;
