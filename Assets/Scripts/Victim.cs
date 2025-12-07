@@ -66,16 +66,23 @@ public class Victim
 
     private string ChooseFirstName()
     {
-        return "FirstName";
+        string[] allOptions = FileManager.ReadSeperatedValuesFromFile("FirstNameOptions");
+        return allOptions[UnityEngine.Random.Range(0, allOptions.Length)];
     }
     
     private string ChooseLastName()
     {
-        return "LastName";
+        string[] allOptions = FileManager.ReadSeperatedValuesFromFile("LastNameOptions");
+        return allOptions[UnityEngine.Random.Range(0, allOptions.Length)];
     }
 
     private string ChooseDescription()
     {
-        return "This is a victim description";
+        string[] allOptions = FileManager.ReadSeperatedValuesFromFile("DescriptionOptions");
+        string selectedOption = allOptions[UnityEngine.Random.Range(0, allOptions.Length)];
+        selectedOption = selectedOption.Replace("{FirstName}", _firstName);
+        selectedOption = selectedOption.Replace("{LastName}", _lastName);
+
+        return selectedOption;
     }
 }
