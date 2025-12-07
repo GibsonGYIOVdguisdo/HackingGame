@@ -46,6 +46,7 @@ public abstract class Upgrade : MonoBehaviour
         if (FindFirstObjectByType<PlayerHandler>().Money > Cost)
         {
             FindFirstObjectByType<PlayerHandler>().Money -= Cost;
+            FindAnyObjectByType<NotifcationHandler>().CreateNotification($"Successfully purchased {name} for £{Cost}");
             _level += 1;
             UpdateDisplayedData();
             OnPurchase?.Invoke(_level, Cost);
