@@ -5,6 +5,10 @@ public class PlayerHandler : MonoBehaviour
 {
     private static int s_money;
 
+    // Upgrades information
+    private static int s_programmingLevel;
+
+
     public event System.Action<int> OnMoneyChanged;
 
     public int Money { 
