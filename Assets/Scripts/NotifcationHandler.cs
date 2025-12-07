@@ -17,14 +17,21 @@ public class NotifcationHandler : MonoBehaviour
     private IEnumerator NotificationChangeTransparency(float progress, GameObject notification)
     {
         yield return new WaitForSeconds(progress * 3 + LingerTimer);
-        notification.GetComponent<Image>().color = new Vector4(255, 255, 255, 1 - progress);
-        notification.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().color = new Vector4(0, 0, 0, 1 - progress);
+
+        float transparency = 1 - progress;
+
+        notification.GetComponent<Image>().color = new Vector4(255, 255, 255, transparency);
+        notification.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().color = new Vector4(0, 0, 0, transparency);
+        
+        if (transparency <= 0)
+        {
+            Destroy(notification);
+        }
     }
     
     private IEnumerator DeleteNotifcation(GameObject notification)
     {
         yield return new WaitForSeconds(8);
-        Destroy(notification);
     }
 
     public void CreateNotification(string text)
@@ -41,6 +48,6 @@ public class NotifcationHandler : MonoBehaviour
             StartCoroutine(NotificationChangeTransparency(i / 100f, notification));
         }
 
-        DeleteNotifcation(notification);
+        StartCoroutine(DeleteNotifcation(notification));
     }
 }
