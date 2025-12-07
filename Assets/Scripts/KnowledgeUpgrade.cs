@@ -20,7 +20,7 @@ public class KnowledgeUpgrade: Upgrade
         {
             if (((int)Random.Range(1, 10)) == 1)
             {
-                newAmount *= Modifier;
+                newAmount += newAmount * Modifier;
             }
         }
 
