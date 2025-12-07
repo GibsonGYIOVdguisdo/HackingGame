@@ -1,19 +1,13 @@
 using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class NotifcationHandler : MonoBehaviour
 
 {
+    public int LingerTimer = 3;
     public GameObject NotificationPrefab;
-
-    void Start()
-    {
-        CreateNotification("John");
-
-    }
 
     private IEnumerator NotificationChangePosition(float progress, GameObject notification)
     {
@@ -22,7 +16,7 @@ public class NotifcationHandler : MonoBehaviour
     }
     private IEnumerator NotificationChangeTransparency(float progress, GameObject notification)
     {
-        yield return new WaitForSeconds(progress * 3 + 5);
+        yield return new WaitForSeconds(progress * 3 + LingerTimer);
         notification.GetComponent<Image>().color = new Vector4(255, 255, 255, 1 - progress);
         notification.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().color = new Vector4(0, 0, 0, 1 - progress);
     }
@@ -33,7 +27,7 @@ public class NotifcationHandler : MonoBehaviour
         Destroy(notification);
     }
 
-    void CreateNotification(string text)
+    public void CreateNotification(string text)
     {
         GameObject notification = Instantiate(NotificationPrefab);
         notification.transform.SetParent(transform);
