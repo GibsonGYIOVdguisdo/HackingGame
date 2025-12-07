@@ -36,6 +36,11 @@ public abstract class Upgrade : MonoBehaviour
 
     public event System.Action<int, int> OnPurchase;
 
+    void Start()
+    {
+        UpdateDisplayedData();
+    }
+
     public void Purchase()
     {
         if (FindFirstObjectByType<PlayerHandler>().Money > Cost)
