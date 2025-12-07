@@ -1,4 +1,3 @@
-using System;
 using Unity.VisualScripting;
 using UnityEngine;
     
@@ -66,16 +65,35 @@ public class Victim
 
     private string ChooseFirstName()
     {
-        return "FirstName";
+        string[] allOptions = FileManager.ReadSeperatedValuesFromFile("FirstNameOptions");
+        return allOptions[UnityEngine.Random.Range(0, allOptions.Length)];
     }
     
     private string ChooseLastName()
     {
-        return "LastName";
+        string[] allOptions = FileManager.ReadSeperatedValuesFromFile("LastNameOptions");
+        return allOptions[UnityEngine.Random.Range(0, allOptions.Length)];
     }
 
     private string ChooseDescription()
     {
-        return "This is a victim description";
+        string[] allOptions = FileManager.ReadSeperatedValuesFromFile("DescriptionOptions");
+        string selectedOption = allOptions[UnityEngine.Random.Range(0, allOptions.Length)];
+        selectedOption = selectedOption.Replace("{FirstName}", _firstName);
+        selectedOption = selectedOption.Replace("{LastName}", _lastName);
+
+        return selectedOption;
+    }
+
+    public string GenerateEmail()
+    {
+        if ((int)Random.Range(0,2) == 1)
+        {
+            return _firstName + (int)Random.Range(0, 999) + "@email.com";
+        }
+        else
+        {
+            return _firstName + "." + _lastName + "@email.com";
+        }
     }
 }
